@@ -6,8 +6,8 @@ using std::getline;
 int main(){
 
 std::string str, str1;
-int i, n, len, half;
-
+int i, n, half;
+size_t len;
 std::cin >> n;
 
 while(n>=0){
