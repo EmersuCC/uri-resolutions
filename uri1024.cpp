@@ -9,6 +9,7 @@ std::string str, str1;
 int i, n, half;
 size_t len;
 std::cin >> n;
+std::cin.ignore();
 
 while(n>=0){
     getline(std::cin, str);
@@ -27,8 +28,11 @@ while(n>=0){
         str[i] = str[i] - 1;
     }
     
-    std::cout << str << '\n';
+    
+    std::cout << str << std::endl;
     n--;
+    if(n == 0)
+        return 0;
 }
-    return 0;
+ 
 }
